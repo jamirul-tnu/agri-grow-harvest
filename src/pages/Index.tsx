@@ -5,78 +5,70 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Leaf, Sprout, Tractor, Phone, Mail, MapPin, Star, Users, Package, Award, ChevronDown, Menu, X } from "lucide-react";
-
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const products = [
-    {
-      name: "NPK 19:19:19 Fertilizer",
-      description: "Balanced nutrition for all crops",
-      price: "₹1450/bag",
-      image: "https://5.imimg.com/data5/SELLER/Default/2022/12/FB/UD/CF/11973220/npk-fertilizer-1000x1000.jpg",
-      badge: "Bestseller",
-      category: "fertilizer"
-    },
-    {
-      name: "Hybrid Mustard Seeds",
-      description: "High-yielding variety for Bengal",
-      price: "₹400/kg",
-      image: "https://www.maliseeds.in/wp-content/uploads/2021/12/3-3.jpg",
-      badge: "",
-      category: "seed"
-    },
-    {
-      name: "Insecticide - Alecto",
-      description: "Effective against multiple pests",
-      price: "₹6500/liter",
-      image: "https://www.agriplexindia.com/cdn/shop/files/6.png?v=1693373482",
-      badge: "New",
-      category: "pesticide"
-    },
-    {
-      name: "Organic Manure",
-      description: "100% natural soil conditioner",
-      price: "₹300/bag",
-      image: "https://kj1bcdn.b-cdn.net/media/70950/manure.jpg",
-      badge: "",
-      category: "fertilizer"
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: "রমেশ দাস",
-      location: "কৃষক, বর্ধমান",
-      rating: 5,
-      comment: "AgriGrow Bengal থেকে সার কিনে আমার ধানের ফলন ২০% বেড়েছে। দাম যুক্তিসঙ্গত এবং গুণমান খুবই ভালো।",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
-    },
-    {
-      name: "সুমিত্রা সরকার",
-      location: "কৃষক, নদীয়া",
-      rating: 5,
-      comment: "তাদের হাইব্রিড বীজ ব্যবহার করে আমার সবজি চাষে দারুণ সাফল্য পেয়েছি। সময়মতো ডেলিভারি পেয়েছি।",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face"
-    },
-    {
-      name: "অনিল মুখার্জী",
-      location: "কৃষক, হুগলি",
-      rating: 4,
-      comment: "পোকামাকড়ের সমস্যার জন্য তাদের কীটনাশক ব্যবহার করেছি। খুবই কার্যকরী এবং নিরাপদ।",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"
-    }
-  ];
-
-  const stats = [
-    { number: "5000+", label: "সন্তুষ্ট কৃষক" },
-    { number: "100+", label: "কৃষি পণ্য" },
-    { number: "23", label: "জেলায় সেবা" },
-    { number: "10+", label: "বছরের অভিজ্ঞতা" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gray-50">
+  const products = [{
+    name: "NPK 19:19:19 Fertilizer",
+    description: "Balanced nutrition for all crops",
+    price: "₹1450/bag",
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/12/FB/UD/CF/11973220/npk-fertilizer-1000x1000.jpg",
+    badge: "Bestseller",
+    category: "fertilizer"
+  }, {
+    name: "Hybrid Mustard Seeds",
+    description: "High-yielding variety for Bengal",
+    price: "₹400/kg",
+    image: "https://www.maliseeds.in/wp-content/uploads/2021/12/3-3.jpg",
+    badge: "",
+    category: "seed"
+  }, {
+    name: "Insecticide - Alecto",
+    description: "Effective against multiple pests",
+    price: "₹6500/liter",
+    image: "https://www.agriplexindia.com/cdn/shop/files/6.png?v=1693373482",
+    badge: "New",
+    category: "pesticide"
+  }, {
+    name: "Organic Manure",
+    description: "100% natural soil conditioner",
+    price: "₹300/bag",
+    image: "https://kj1bcdn.b-cdn.net/media/70950/manure.jpg",
+    badge: "",
+    category: "fertilizer"
+  }];
+  const testimonials = [{
+    name: "রমেশ দাস",
+    location: "কৃষক, বর্ধমান",
+    rating: 5,
+    comment: "AgriGrow Bengal থেকে সার কিনে আমার ধানের ফলন ২০% বেড়েছে। দাম যুক্তিসঙ্গত এবং গুণমান খুবই ভালো।",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
+  }, {
+    name: "সুমিত্রা সরকার",
+    location: "কৃষক, নদীয়া",
+    rating: 5,
+    comment: "তাদের হাইব্রিড বীজ ব্যবহার করে আমার সবজি চাষে দারুণ সাফল্য পেয়েছি। সময়মতো ডেলিভারি পেয়েছি।",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face"
+  }, {
+    name: "অনিল মুখার্জী",
+    location: "কৃষক, হুগলি",
+    rating: 4,
+    comment: "পোকামাকড়ের সমস্যার জন্য তাদের কীটনাশক ব্যবহার করেছি। খুবই কার্যকরী এবং নিরাপদ।",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"
+  }];
+  const stats = [{
+    number: "5000+",
+    label: "সন্তুষ্ট কৃষক"
+  }, {
+    number: "100+",
+    label: "কৃষি পণ্য"
+  }, {
+    number: "23",
+    label: "জেলায় সেবা"
+  }, {
+    number: "10+",
+    label: "বছরের অভিজ্ঞতা"
+  }];
+  return <div className="min-h-screen bg-gray-50">
       {/* Top Bar */}
       <div className="bg-green-800 text-white py-2 px-4 hidden md:block">
         <div className="container mx-auto flex justify-between items-center text-sm">
@@ -120,17 +112,13 @@ const Index = () => {
               <Button className="bg-green-700 hover:bg-green-800">দাম জানুন</Button>
             </div>
             
-            <button 
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
+            <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
           
           {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="md:hidden bg-white py-4">
+          {isMenuOpen && <div className="md:hidden bg-white py-4">
               <a href="#home" className="block py-2 px-4 text-gray-800 hover:bg-green-50">হোম</a>
               <a href="#products" className="block py-2 px-4 text-gray-800 hover:bg-green-50">পণ্যসমূহ</a>
               <a href="#about" className="block py-2 px-4 text-gray-800 hover:bg-green-50">আমাদের সম্পর্কে</a>
@@ -138,8 +126,7 @@ const Index = () => {
               <div className="px-4 py-2">
                 <Button className="w-full bg-green-700 hover:bg-green-800">দাম জানুন</Button>
               </div>
-            </div>
-          )}
+            </div>}
         </div>
       </nav>
 
@@ -154,18 +141,14 @@ const Index = () => {
                 <Button size="lg" className="bg-white text-green-800 hover:bg-gray-100">
                   আমাদের পণ্য দেখুন
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-800">
+                <Button size="lg" variant="outline" className="border-white hover:bg-white text-gray-950">
                   যোগাযোগ করুন
                 </Button>
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
               <div className="animate-bounce-slow">
-                <img 
-                  src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=500&h=400&fit=crop" 
-                  alt="Bengali Farmer" 
-                  className="rounded-lg shadow-xl"
-                />
+                <img alt="Bengali Farmer" className="rounded-lg shadow-xl" src="/lovable-uploads/7b0004a1-326f-45ea-96a4-d0f8d594503b.jpg" />
               </div>
             </div>
           </div>
@@ -238,17 +221,12 @@ const Index = () => {
             
             <TabsContent value="all" className="mt-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {products.map((product, index) => (
-                  <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+                {products.map((product, index) => <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
                     <div className="relative h-48 overflow-hidden">
                       <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                      {product.badge && (
-                        <div className={`absolute top-2 right-2 text-white text-xs px-2 py-1 rounded ${
-                          product.badge === 'Bestseller' ? 'bg-green-700' : 'bg-red-600'
-                        }`}>
+                      {product.badge && <div className={`absolute top-2 right-2 text-white text-xs px-2 py-1 rounded ${product.badge === 'Bestseller' ? 'bg-green-700' : 'bg-red-600'}`}>
                           {product.badge === 'Bestseller' ? 'বেস্টসেলার' : 'নতুন'}
-                        </div>
-                      )}
+                        </div>}
                     </div>
                     <CardContent className="p-4">
                       <h3 className="font-semibold text-lg mb-1">{product.name}</h3>
@@ -260,8 +238,7 @@ const Index = () => {
                         </Button>
                       </div>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </TabsContent>
           </Tabs>
@@ -278,12 +255,10 @@ const Index = () => {
       <section className="py-16 bg-green-800 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {stats.map((stat, index) => (
-              <div key={index}>
+            {stats.map((stat, index) => <div key={index}>
                 <div className="text-4xl font-bold mb-2">{stat.number}</div>
                 <div className="text-lg">{stat.label}</div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -297,15 +272,10 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-gradient-to-br from-gray-50 to-gray-100">
+            {testimonials.map((testimonial, index) => <Card key={index} className="bg-gradient-to-br from-gray-50 to-gray-100">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.name} 
-                      className="w-12 h-12 rounded-full mr-4"
-                    />
+                    <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
                     <div>
                       <h4 className="font-semibold">{testimonial.name}</h4>
                       <p className="text-sm text-gray-600">{testimonial.location}</p>
@@ -313,13 +283,10 @@ const Index = () => {
                   </div>
                   <p className="text-gray-700 mb-3">"{testimonial.comment}"</p>
                   <div className="flex text-yellow-400">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-current" />
-                    ))}
+                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -367,12 +334,7 @@ const Index = () => {
                     </div>
                     <div>
                       <Label htmlFor="message">আপনার বার্তা</Label>
-                      <textarea 
-                        id="message" 
-                        rows={4} 
-                        className="w-full px-3 py-2 border border-input rounded-md" 
-                        placeholder="বার্তা লিখুন"
-                      ></textarea>
+                      <textarea id="message" rows={4} className="w-full px-3 py-2 border border-input rounded-md" placeholder="বার্তা লিখুন"></textarea>
                     </div>
                     <Button type="submit" className="w-full bg-green-700 hover:bg-green-800">
                       বার্তা পাঠান
@@ -447,16 +409,9 @@ const Index = () => {
       </footer>
 
       {/* WhatsApp Float Button */}
-      <a 
-        href="https://wa.me/918967852561" 
-        className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-50 transition-colors"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://wa.me/918967852561" className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-50 transition-colors" target="_blank" rel="noopener noreferrer">
         <Phone className="w-6 h-6" />
       </a>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
