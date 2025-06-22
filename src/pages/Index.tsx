@@ -81,7 +81,7 @@ const Index = () => {
       <div className="bg-green-800 text-white py-2 px-4 hidden md:block">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex space-x-4">
-            <span className="flex items-center"><Phone className="w-4 h-4 mr-1" /> +91 9876543210</span>
+            <span className="flex items-center"><Phone className="w-4 h-4 mr-1" /> +91 8967852561</span>
             <span className="flex items-center"><Mail className="w-4 h-4 mr-1" /> info@agrigrowbengal.in</span>
             <span className="flex items-center"><MapPin className="w-4 h-4 mr-1" /> পশ্চিমবঙ্গ, ভারত</span>
           </div>
@@ -341,7 +341,7 @@ const Index = () => {
                     </div>
                     <div className="flex items-center">
                       <Phone className="w-5 h-5 mr-4" />
-                      <span>+91 9876543210</span>
+                      <span>+91 8967852561</span>
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 mr-4" />
@@ -426,7 +426,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-center">
                   <Phone className="w-4 h-4 mr-3" />
-                  <span>+91 9876543210</span>
+                  <span>+91 8967852561</span>
                 </li>
                 <li className="flex items-center">
                   <Mail className="w-4 h-4 mr-3" />
@@ -448,7 +448,7 @@ const Index = () => {
 
       {/* WhatsApp Float Button */}
       <a 
-        href="https://wa.me/919876543210" 
+        href="https://wa.me/918967852561" 
         className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-50 transition-colors"
         target="_blank"
         rel="noopener noreferrer"
