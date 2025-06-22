@@ -27,10 +27,10 @@ const Index = () => {
       category: "seed"
     },
     {
-      name: "Insecticide - CropGuard",
+      name: "Insecticide - Alecto",
       description: "Effective against multiple pests",
-      price: "₹650/liter",
-      image: "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?w=300&h=200&fit=crop",
+      price: "₹6500/liter",
+      image: "https://www.agriplexindia.com/cdn/shop/files/6.png?v=1693373482",
       badge: "New",
       category: "pesticide"
     },
