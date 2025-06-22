@@ -384,7 +384,7 @@ const Index = () => {
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-start">
                   <MapPin className="w-4 h-4 mt-1 mr-3" />
-                  <span>কলকাতা, পশ্চিমবঙ্গ - ৭০০০০১</span>
+                  <span>Bethuadahari, Nakashipara, Nadia, 741126</span>
                 </li>
                 <li className="flex items-center">
                   <Phone className="w-4 h-4 mr-3" />
