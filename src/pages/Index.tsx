@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Leaf, Seed, Tractor, Phone, Mail, MapPin, Star, Users, Package, Award, ChevronDown, Menu, X } from "lucide-react";
+import { Leaf, Sprout, Tractor, Phone, Mail, MapPin, Star, Users, Package, Award, ChevronDown, Menu, X } from "lucide-react";
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -185,7 +184,7 @@ const Index = () => {
             <Card className="bg-green-50 border-green-200 hover:shadow-lg transition-shadow">
               <CardHeader className="text-center">
                 <div className="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                  <Seed className="h-8 w-8 text-green-700" />
+                  <Sprout className="h-8 w-8 text-green-700" />
                 </div>
                 <CardTitle className="text-xl text-gray-800">উন্নত মানের বীজ</CardTitle>
               </CardHeader>
