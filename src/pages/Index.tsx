@@ -13,16 +13,16 @@ const Index = () => {
     {
       name: "NPK 19:19:19 Fertilizer",
       description: "Balanced nutrition for all crops",
-      price: "₹450/bag",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop",
+      price: "₹1450/bag",
+      image: "https://5.imimg.com/data5/SELLER/Default/2022/12/FB/UD/CF/11973220/npk-fertilizer-1000x1000.jpg",
       badge: "Bestseller",
       category: "fertilizer"
     },
     {
-      name: "Hybrid Rice Seeds",
+      name: "Hybrid Mustard Seeds",
       description: "High-yielding variety for Bengal",
-      price: "₹1200/kg",
-      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?w=300&h=200&fit=crop",
+      price: "₹400/kg",
+      image: "https://www.maliseeds.in/wp-content/uploads/2021/12/3-3.jpg",
       badge: "",
       category: "seed"
     },
@@ -38,7 +38,7 @@ const Index = () => {
       name: "Organic Manure",
       description: "100% natural soil conditioner",
       price: "₹300/bag",
-      image: "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?w=300&h=200&fit=crop",
+      image: "https://kj1bcdn.b-cdn.net/media/70950/manure.jpg",
       badge: "",
       category: "fertilizer"
     }
